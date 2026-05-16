@@ -18,7 +18,7 @@ function connect(host: string, port?: number, secure?: boolean) {
   const p = port ?? 80;
   const s = secure ?? false;
 
-  return `Connect ${host} ${p} ${secure}`;
+  return `Connect ${host} ${p} ${s}`;
 }
 
 connect("localhost", 100, true);
