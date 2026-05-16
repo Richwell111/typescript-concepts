@@ -20,7 +20,8 @@ async function getData() {
   return Promise.all([
     Promise.resolve(1 as const),
     Promise.resolve("x" as const),
-  ] as const);
+  ] as const); 
 }
+
 
 type DataTupleWithPromise = Awaited<ReturnType<typeof getData>>; // [1, "x"] readonly
