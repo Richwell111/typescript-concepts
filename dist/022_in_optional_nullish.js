@@ -5,7 +5,7 @@ function describeUserExample(u) {
     }
     return `User ${u.expiresAt.toISOString()}`;
 }
-console.log(describeUserExample({ role: "Admin", permissions: ["read"] }));
+console.log(describeUserExample({ role: "Admin", permissions: ["read,edit"] }));
 const P1N3 = { name: "John" };
 const P2N3 = { name: "Ben", contact: { email: "ben123@gmail.com" } };
 const email1N3 = P1N3.contact?.email;
@@ -15,5 +15,5 @@ const email2N3 = P2N3.contact?.email;
 const countFromServerN3 = 0;
 const labelFromServerN3 = "";
 const aN3 = countFromServerN3 ?? 100; // keeps the 0
-const bN3 = countFromServerN3 || 100; // keeps ths 100
+const bN3 = countFromServerN3 || 100; // keeps the 100
 console.log(aN3, bN3);

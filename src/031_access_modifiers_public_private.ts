@@ -19,7 +19,7 @@ class BankAccount {
   }
 
   verifyOtp(code: number) {
-    return this.#otp === code; //only accessibjle inside the class
+    return this.#otp === code; //only accessible inside the class
   }
 }
 

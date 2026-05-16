@@ -11,7 +11,7 @@ function describeUserExample(u: UserExample) {
   return `User ${u.expiresAt.toISOString()}`;
 }
 
-console.log(describeUserExample({ role: "Admin", permissions: ["read"] }));
+console.log(describeUserExample({ role: "Admin", permissions: ["read,edit"] }));
 
 //avoid runtimes crashes
 // ?? and ||
@@ -35,6 +35,6 @@ const countFromServerN3: number | null = 0;
 const labelFromServerN3: string | undefined = "";
 
 const aN3 = countFromServerN3 ?? 100; // keeps the 0
-const bN3 = countFromServerN3 || 100; // keeps ths 100
+const bN3 = countFromServerN3 || 100; // keeps the 100
 
 console.log(aN3, bN3);

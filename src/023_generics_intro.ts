@@ -1,4 +1,4 @@
-// understand what is "type paramter" <T>
+// understand what is "type parameter" <T>
 // how typescript infers <T> from your arguments automatically
 
 // is a function -> the types are "blanks" -> you fill in later
@@ -28,3 +28,11 @@ console.log(firstGen([1, 2, 3, 4]));
 function wrap<T>(value: T): { value: T } {
   return { value };
 }
+
+console.log(wrap(5));
+
+// generics with multiple type parameters
+function pair<T, U>(v1: T, v2: U): [T, U] {
+  return [v1, v2];
+}   
+

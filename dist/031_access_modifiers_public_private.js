@@ -15,7 +15,7 @@ class BankAccount {
         return this.balance;
     }
     verifyOtp(code) {
-        return this.#otp === code; //only accessibjle inside the class
+        return this.#otp === code; //only accessible inside the class
     }
 }
 const acc = new BankAccount("Sangam");

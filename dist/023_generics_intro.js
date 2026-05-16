@@ -1,5 +1,5 @@
 "use strict";
-// understand what is "type paramter" <T>
+// understand what is "type parameter" <T>
 // how typescript infers <T> from your arguments automatically
 // is a function -> the types are "blanks" -> you fill in later
 // <T> is a placeholder
@@ -21,4 +21,9 @@ console.log(firstGen([1, 2, 3, 4]));
 // with generics: (x: T)=> T // keep the exact type
 function wrap(value) {
     return { value };
+}
+console.log(wrap(5));
+// generics with multiple type parameters
+function pair(v1, v2) {
+    return [v1, v2];
 }
