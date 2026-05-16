@@ -10,7 +10,7 @@ function printId(id: string | number) {
 
 //object union
 type Admin = { role: "Admin"; permissions: string[] };
-type Customer = { role: "Customer"; loyaltyPoints: number };
+type Customer = { role: "Customer"; loyaltyPoints: number }; 
 
 function describeUser(u: Admin | Customer) {
   if (u.role === "Admin") {

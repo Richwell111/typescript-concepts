@@ -4,15 +4,15 @@
 
 let count = 0; //ts sees number
 const site = "acedevhub"; // ts sees the exact literal "acedevhub"
-const scores = [10, 20, 30];
+const scors = [10, 20, 30];
 
-//over annotation isn't bad -> just noisy
+//over annonation isnt bad -> just noisy
 
 export function add(a: number, b: number): number {
   return a + b;
 }
 
-console.log(add(5, 3));
+console.log(add(5, 2));
 
 //you should also annotate when the type is not obvious
 
